@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mavic 2 Pro</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="containar">
+        <div class="container">
             <div class="header__inner">
                 <a class="logo" href="#" >
                     <picture class="logo__img">
-                        <source src="images/logo-mobile.png" media="(max-width: 640px)">
+                        <source srcset="images/logo-mobile.png" media="(max-width: 640px)">
                         <img src="images/logo.png" alt="logo">
                     </picture>
                 </a>
                 <nav class="menu">
+                    <buttton class="menu__btn">
+                        <span class="menu__btn-line"></span>
+                    </buttton>
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="#">О ДРОНЕ</a>
@@ -36,6 +39,9 @@
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="#">КОНТАКТЫ</a>
                         </li>
+                        <li class="menu__list-phone">
+                            <a class="header__phone" href="tel:80505676767" >8 (050) 567 67 67</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="header__info">
@@ -45,6 +51,9 @@
             </div>
         </div>
     </header>
+
+    <main class="fullpage">
+
     <section class="page-section top">
         <div class="page-section__wrapper top__wrapper">
             <div class="container">
@@ -199,34 +208,30 @@
                 <h3 class="title">Характеристики</h3>
                 <div class="specification__inner">
                     <div class="specification__item">
-                        <div class="specification__box">
+                        <div class="specification__box specification__box-1">
                             <h4 class="specification__box-title">Dlog-M 10 бит</h4>
                             <p class="specification__box-text">
                                 Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с более широким динамическим диапазоном, дающим больше возможностей для цветокоррекции.
                             </p>
                         </div>
-                    </div>
-                    <div class="specification__item">
-                        <div class="specification__box">
+                        <div class="specification__box specification__box-2">
                             <h4 class="specification__box-title">Камера Hasselblad</h4>
                             <p class="specification__box-text">
                                 Камера Hasselblad L1D-20С известны эргономичным дизайном и превосходным качеством изображений.
                             </p>
                         </div>
                     </div>
-                    <div class="specification__item">
+                    <div class="specification__item specification__item--center">
                         <img src="images/mavic.png" alt="specification">
                     </div>
                     <div class="specification__item">
-                        <div class="specification__box">
+                        <div class="specification__box specification__box-3">
                             <h4 class="specification__box-title">Матрица CMOS 1</h4>
                             <p class="specification__box-text">
                                 Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG 4K ТВ и просматривать запись в полном цветовом спектре
                             </p>
                         </div>
-                    </div>
-                    <div class="specification__item">
-                        <div class="specification__box">
+                        <div class="specification__box specification__box-4">
                             <h4 class="specification__box-title">Видео HDR</h4>
                             <p class="specification__box-text">
                                 Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG 4K ТВ и просматривать запись в полном цветовом спектре
@@ -254,7 +259,7 @@
                             В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).
                         </p>
                     </div>
-                    <div class="questions__item">
+                    <div class="questions__item questions__item--active">
                         <h4 class="questions__item-title">Чем Mavic 2 лучше Mavic Pro?</h4>
                         <p class="questions__item-text">
                             В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).
@@ -314,7 +319,7 @@
                             </p>
                             <div class="contacts__form-line">
                                 <input class="contacts__form-input" placeholder="Ваше имя" type="text">
-                                <input class="contacts__form-input" placeholder="Ваше e-mail" type="text">
+                                <input class="contacts__form-input" placeholder="Ваш e-mail" type="text">
                             </div>
                             <textarea class="contacts__form-textarea" placeholder="Что вас интересует?"></textarea>
                             <button class="contacts__form-btn" type="submit">ОТПРАВИТЬ</button>
@@ -338,17 +343,16 @@
                         </li>
                     </ul>
                 </div>
+                <footer class="footer">
+                        <p class="footer__copy">
+                            © DJI, 2020
+                        </p>
+                </footer>
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__copy">
-                © DJI, 2020
-            </p>
-        </div>
-    </footer>
-
+    
+</main>
     
 
     
